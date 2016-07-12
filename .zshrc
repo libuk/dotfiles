@@ -1,4 +1,4 @@
-ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
+ZSH=$HOME/dotfiles/.oh-my-zsh # Path to oh-my-zsh installation.
 ZSH_THEME="cobalt2" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
