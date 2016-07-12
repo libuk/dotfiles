@@ -18,7 +18,6 @@ PATH=${PATH}:/bin
 PATH=${PATH}:/usr/sbin
 PATH=${PATH}:/sbin
 PATH=${PATH}:/opt/X11/bin
-
 export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
