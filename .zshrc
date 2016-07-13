@@ -4,11 +4,18 @@ ZSH_THEME="cobalt2" # Current theme.
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-	git
-	git-extras
 	brew
 	brew-cask
 )
+
+alias v="vim"
+alias ga="git add"
+alias gc="git commit -m"
+alias gs="git status"
+alias gd="git diff"
+alias gp="git push"
+alias gpl="git pull"
+alias gco="git checkout"
 
 source $ZSH/oh-my-zsh.sh
 
