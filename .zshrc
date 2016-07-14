@@ -8,6 +8,7 @@ plugins=(
 	brew-cask
 )
 
+alias lsa="ls -a"
 alias v="vim"
 alias ga="git add"
 alias gc="git commit -m"
