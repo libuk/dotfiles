@@ -3,6 +3,7 @@
 " PLUGINS ( using vim-plug )
 call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/flazz/vim-colorschemes.git'
+Plug 'https://github.com/mxw/vim-jsx.git'
 call plug#end()
 
 " COLOURS
