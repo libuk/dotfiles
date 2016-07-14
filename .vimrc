@@ -1,3 +1,3 @@
 " Author: Daniel Liburd
 
-syntax enable " enable syntax processing
+:syntax on " turn syntax processing on
