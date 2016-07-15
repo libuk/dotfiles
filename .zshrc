@@ -17,6 +17,17 @@ alias gd="git diff"
 alias gp="git push"
 alias gpl="git pull"
 alias gco="git checkout"
+alias sp-pl="spotify play"
+alias sp-pl-al="spotify play album"
+alias sp-pl-ar="spotify play artist"
+alias sp-pl-ls="spotify play list"
+alias sp-ps="spotify pause"
+alias sp-nxt="spotify next"
+alias sp-prev="spotify prev"
+alias sp-tg-sh="spotify toggle shuffle"
+alias sp-tg-rp="spotify toggle repeat"
+alias sp-st="spotify status"
+alias sp-sh="spotify share"
 
 source $ZSH/oh-my-zsh.sh
 
