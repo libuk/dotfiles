@@ -1,5 +1,5 @@
 export ZSH=$HOME/dotfiles/.oh-my-zsh # Path to oh-my-zsh installation.
-ZSH_THEME="cobalt2" # Current theme.
+ZSH_THEME="honukai" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
