@@ -24,7 +24,7 @@ set expandtab       " tabs are spaces
 " UI LAYOUT
 set number          " show line numbers
 set showcmd         " show command in bottom bar
-set nocursorline    " highlight current line
+set cursorline      " highlight current line
 set laststatus=2    " always display statusline
 
 " SEARCH
