@@ -1,11 +1,12 @@
-export ZSH=$HOME/dotfiles/.oh-my-zsh # Path to oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
 ZSH_THEME="honukai" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
-	brew
-	brew-cask
+  brew
+  brew-cask
+  zsh-nvm
 )
 
 alias lsa="ls -a"
@@ -40,4 +41,3 @@ PATH=${PATH}:/opt/X11/bin
 export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
