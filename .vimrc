@@ -17,9 +17,11 @@ syntax enable       " turn syntax processing on
 colorscheme onedark " set colour scheme
 
 " SPACES & TABS
-set tabstop=2       " number of visual spaces per TAB
-set softtabstop=2   " number of spaces in tab when editing
-set expandtab       " tabs are spaces
+set tabstop=2                   " number of visual spaces per TAB
+set softtabstop=2               " number of spaces in tab when editing
+set shiftwidth=2                " indent of spaces on enter
+set expandtab                   " tabs are spaces
+set backspace=indent,eol,start  " backspace works as normal
 
 " UI LAYOUT
 set number          " show line numbers
@@ -33,6 +35,7 @@ set hlsearch        " highlight matches
 
 " MISC
 set noswapfile      " disable .swp file creation
+set mouse=a         " enable mouse interactions
 
 " SYNTASTIC
 set statusline+=%#warningmsg#
@@ -45,3 +48,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'
+
+" AIRLINE
+let g:airline#extensions#tabline#enabled = 1        " display buffer names
+let g:airline#extensions#tabline#left_sep = ' '     " straight buffer tabs
+let g:airline#extensions#tabline#left_alt_sep = '|' " straight buffer tabs
+let g:airline#extensions#tabline#fnamemod = ':.'    " display relative path of buffer
+let g:airline#extensions#tabline#fnamecollapse = 0  " disable collapse of path name
