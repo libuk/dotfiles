@@ -10,6 +10,7 @@ Plug 'https://github.com/hail2u/vim-css3-syntax.git'    " ccs3 syntax
 Plug 'cakebaker/scss-syntax.vim'                        " scss syntax
 Plug 'https://github.com/airblade/vim-gitgutter.git'    " git gutter
 Plug 'vim-airline/vim-airline'                          " airline
+Plug 'vim-airline/vim-airline-themes'                   " airline themes
 call plug#end()
 
 " COLOURS
@@ -57,3 +58,13 @@ let g:airline#extensions#tabline#left_sep = ' '     " straight buffer tabs
 let g:airline#extensions#tabline#left_alt_sep = '|' " straight buffer tabs
 let g:airline#extensions#tabline#fnamemod = ':.'    " display relative path of buffer
 let g:airline#extensions#tabline#fnamecollapse = 0  " disable collapse of path name
+
+" remove seperators from statusline and buffers
+let g:airline_left_sep=''
+let g:airline_right_sep=''
+
+" Change cursor between insert and normal mode in iTerm2
+if $TERM_PROGRAM =~ "iTerm"
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+endif
