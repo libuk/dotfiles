@@ -18,6 +18,8 @@ alias gd="git diff"
 alias gp="git push"
 alias gpl="git pull"
 alias gco="git checkout"
+alias gb="git branch"
+alias gbs="git branch -vv"
 
 source $ZSH/oh-my-zsh.sh
 
