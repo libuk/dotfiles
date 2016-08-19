@@ -9,8 +9,11 @@ plugins=(
   zsh-nvm
 )
 
+# Misc
 alias lsa="ls -a"
 alias v="vim"
+
+# Git
 alias ga="git add"
 alias gc="git commit -m"
 alias gs="git status"
@@ -20,6 +23,10 @@ alias gpl="git pull"
 alias gco="git checkout"
 alias gb="git branch"
 alias gbs="git branch -vv"
+alias gstash="git stash"
+alias gstashls="git stash list"
+alias gstashd="git stash drop"
+alias gstashapp="git stash apply"
 
 source $ZSH/oh-my-zsh.sh
 
