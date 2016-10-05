@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
-ZSH_THEME="honukai" # Current theme.
+ZSH_THEME="amuse" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -12,6 +12,7 @@ plugins=(
 # Misc
 alias lsa="ls -a"
 alias v="vim"
+alias tourn="cd ~/repositories/tournaments/src/TicketmasterSystems.Tournaments.GP/front_end"
 
 # Git
 alias ga="git add"
