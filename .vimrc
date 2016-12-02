@@ -11,6 +11,7 @@ Plug 'cakebaker/scss-syntax.vim'                        " scss syntax
 Plug 'https://github.com/airblade/vim-gitgutter.git'    " git gutter
 Plug 'vim-airline/vim-airline'                          " airline
 Plug 'vim-airline/vim-airline-themes'                   " airline themes
+Plug 'easymotion/vim-easymotion'                        " easy motion
 call plug#end()
 
 " COLOURS
@@ -37,6 +38,8 @@ set hlsearch        " highlight matches
 " MISC
 set noswapfile      " disable .swp file creation
 set mouse=a         " enable mouse interactions
+vnoremap > >gv      " keep current selection after tab indent
+vnoremap < <gv      " keep current selection after tab indent
 
 " MAPS
 nnoremap <F5> :buffers<CR>:buffer<Space>
@@ -62,6 +65,9 @@ let g:airline#extensions#tabline#fnamecollapse = 0  " disable collapse of path n
 " remove seperators from statusline and buffers
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+
+" EASY-MOTION
+let g:EasyMotion_do_mapping = 1 " Use default mappings
 
 " Change cursor between insert and normal mode in iTerm2
 if $TERM_PROGRAM =~ "iTerm"

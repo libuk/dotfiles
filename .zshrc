@@ -13,6 +13,7 @@ plugins=(
 alias lsa="ls -a"
 alias v="vim"
 alias tourn="cd ~/repositories/tournaments/src/TicketmasterSystems.Tournaments.GP/front_end"
+alias dockval="eval $(docker-machine env)"
 
 # Git
 alias ga="git add"
@@ -40,3 +41,4 @@ PATH=${PATH}:/opt/X11/bin
 export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
+export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
