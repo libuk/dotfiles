@@ -14,6 +14,10 @@ alias lsa="ls -a"
 alias v="vim"
 alias tourn="cd ~/repositories/tournaments/src/TicketmasterSystems.Tournaments.GP/front_end"
 alias dockval="eval $(docker-machine env)"
+alias clr="clear"
+alias ag="sudo apt-get"
+alias agu="sudo apt-get update"
+alias agi="sudo apt-get install"
 
 # Git
 alias ga="git add"
@@ -42,3 +46,6 @@ export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
+
+export NVM_DIR="/home/sandals/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
