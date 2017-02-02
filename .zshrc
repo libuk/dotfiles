@@ -46,6 +46,3 @@ export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
-
-export NVM_DIR="/home/sandals/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

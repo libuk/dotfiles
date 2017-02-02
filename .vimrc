@@ -52,8 +52,8 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'
+let g:syntastic_javascript_checkers = ['standard']
 
 " AIRLINE
 let g:airline#extensions#tabline#enabled = 1        " display buffer names
