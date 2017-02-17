@@ -41,6 +41,11 @@ set mouse=a         " enable mouse interactions
 vnoremap > >gv      " keep current selection after tab indent
 vnoremap < <gv      " keep current selection after tab indent
 
+if $TERM_PROGRAM =~ "iTerm"                 " Change cursor between insert and normal mode in iTerm2
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
+endif
+
 " MAPS
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
@@ -67,9 +72,3 @@ let g:airline_right_sep=''  " remove seperators from statusline and buffers
 
 " EASY-MOTION
 let g:EasyMotion_do_mapping = 1 " Use default mappings
-
-" Change cursor between insert and normal mode in iTerm2
-if $TERM_PROGRAM =~ "iTerm"
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
