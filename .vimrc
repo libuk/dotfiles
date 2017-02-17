@@ -49,11 +49,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'
-let g:syntastic_javascript_checkers = ['standard']
+let g:syntastic_always_populate_loc_list = 1                                    " display syntax errors in location list
+let g:syntastic_auto_loc_list = 1                                               " close location list if no errors are present
+let g:syntastic_check_on_wq = 1                                                 " run syntastic on save and quit
+let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'  " find/use local eslint directory
+let g:syntastic_javascript_checkers = ['standard']                              " use standard as javascript checker
 
 " AIRLINE
 let g:airline#extensions#tabline#enabled = 1        " display buffer names
