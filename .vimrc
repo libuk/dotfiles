@@ -62,9 +62,8 @@ let g:airline#extensions#tabline#left_alt_sep = '|' " straight buffer tabs
 let g:airline#extensions#tabline#fnamemod = ':.'    " display relative path of buffer
 let g:airline#extensions#tabline#fnamecollapse = 0  " disable collapse of path name
 
-" remove seperators from statusline and buffers
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+let g:airline_left_sep=''   " remove seperators from statusline and buffers
+let g:airline_right_sep=''  " remove seperators from statusline and buffers
 
 " EASY-MOTION
 let g:EasyMotion_do_mapping = 1 " Use default mappings
