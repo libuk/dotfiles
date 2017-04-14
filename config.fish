@@ -30,4 +30,7 @@ alias gstashls="git stash list"
 alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
 
+# Environment
+set -gx EDITOR vim
+
 set PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin $PATH
