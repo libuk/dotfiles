@@ -41,6 +41,11 @@ set mouse=a         " enable mouse interactions
 vnoremap > >gv      " keep current selection after tab indent
 vnoremap < <gv      " keep current selection after tab indent
 
+if $TERM_PROGRAM =~ "iTerm"                 " Change cursor between insert and normal mode in iTerm2
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"  " Vertical bar in insert mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"  " Block in normal mode
+endif
+
 " MAPS
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
@@ -49,11 +54,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'
+let g:syntastic_always_populate_loc_list = 1                                    " display syntax errors in location list
+let g:syntastic_auto_loc_list = 1                                               " close location list if no errors are present
+let g:syntastic_check_on_wq = 1                                                 " run syntastic on save and quit
+let g:syntastic_javascript_eslint_exec = system('echo -n `npm bin`').'/eslint'  " find/use local eslint directory
+let g:syntastic_javascript_checkers = ['standard']                              " use standard as javascript checker
 
 " AIRLINE
 let g:airline#extensions#tabline#enabled = 1        " display buffer names
@@ -62,15 +67,8 @@ let g:airline#extensions#tabline#left_alt_sep = '|' " straight buffer tabs
 let g:airline#extensions#tabline#fnamemod = ':.'    " display relative path of buffer
 let g:airline#extensions#tabline#fnamecollapse = 0  " disable collapse of path name
 
-" remove seperators from statusline and buffers
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+let g:airline_left_sep=''   " remove seperators from statusline and buffers
+let g:airline_right_sep=''  " remove seperators from statusline and buffers
 
 " EASY-MOTION
 let g:EasyMotion_do_mapping = 1 " Use default mappings
-
-" Change cursor between insert and normal mode in iTerm2
-if $TERM_PROGRAM =~ "iTerm"
-  let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-  let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
