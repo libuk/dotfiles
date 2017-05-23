@@ -12,8 +12,6 @@ plugins=(
 # Misc
 alias lsa="ls -a"
 alias v="vim"
-alias tourn="cd ~/repositories/tournaments/src/TicketmasterSystems.Tournaments.GP/front_end"
-alias dockval="eval $(docker-machine env)"
 alias clr="clear"
 alias ag="sudo apt-get"
 alias agu="sudo apt-get update"
