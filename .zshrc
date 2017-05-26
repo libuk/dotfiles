@@ -9,13 +9,18 @@ plugins=(
   zsh-nvm
 )
 
+# Variables
+VIM_LOCATION="/usr/local/Cellar/vim/8.0.0604/bin/vim"
+
 # Misc
 alias lsa="ls -a"
-alias v="vim"
+alias v=$VIM_LOCATION
+alias vim=$VIM_LOCATION
 alias clr="clear"
 alias ag="sudo apt-get"
 alias agu="sudo apt-get update"
 alias agi="sudo apt-get install"
+alias wk="cd ~/work/"
 
 # Git
 alias ga="git add"
@@ -44,3 +49,7 @@ export PATH=${PATH}
 
 export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
