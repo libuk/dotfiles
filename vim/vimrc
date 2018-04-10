@@ -1,18 +1,9 @@
 " Author: Daniel Liburd
 
-" PLUGINS ( using vim-plug )
-call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/flazz/vim-colorschemes.git'    " colour schemes
-Plug 'pangloss/vim-javascript'                          " javscript syntax highlighting and indentation
-Plug 'https://github.com/mxw/vim-jsx.git'               " jsx syntax highlighting and indentation
-Plug 'https://github.com/scrooloose/syntastic.git'      " linter
-Plug 'https://github.com/hail2u/vim-css3-syntax.git'    " ccs3 syntax
-Plug 'cakebaker/scss-syntax.vim'                        " scss syntax
-Plug 'https://github.com/airblade/vim-gitgutter.git'    " git gutter
-Plug 'vim-airline/vim-airline'                          " airline
-Plug 'vim-airline/vim-airline-themes'                   " airline themes
-Plug 'easymotion/vim-easymotion'                        " easy motion
-call plug#end()
+" PLUGINS
+if filereadable(expand("~/.vim/plugins.vim"))
+	source ~/.vim/plugins.vim
+endif
 
 " COLOURS
 syntax enable       " turn syntax processing on
