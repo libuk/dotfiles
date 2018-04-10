@@ -9,13 +9,8 @@ plugins=(
   zsh-nvm
 )
 
-# Variables
-VIM_LOCATION="/usr/local/Cellar/vim/8.0.0604/bin/vim"
-
 # Misc
 alias lsa="ls -a"
-alias v=$VIM_LOCATION
-alias vim=$VIM_LOCATION
 alias clr="clear"
 alias ag="sudo apt-get"
 alias agu="sudo apt-get update"
