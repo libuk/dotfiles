@@ -15,4 +15,5 @@ Plug 'https://github.com/airblade/vim-gitgutter.git'    " git gutter
 Plug 'vim-airline/vim-airline'                          " airline
 Plug 'vim-airline/vim-airline-themes'                   " airline themes
 Plug 'easymotion/vim-easymotion'                        " easy motion
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }  " vim prettier
 call plug#end()
