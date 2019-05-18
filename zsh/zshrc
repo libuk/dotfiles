@@ -5,8 +5,6 @@ COMPLETION_WAITING_DOTS="true"
 
 plugins=(
   brew
-  brew-cask
-  zsh-nvm
 )
 
 # Misc
@@ -33,6 +31,9 @@ alias gstashls="git stash list"
 alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
 
+# ngrok
+alias ngrok="~/ngrok"
+
 source $ZSH/oh-my-zsh.sh
 
 PATH=${PATH}:/usr/local/bin
@@ -55,3 +56,20 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# Nexmo - AWS IAM credentials
+export NEXMO_BUCKET_KEY=AKIAJK3TCCFLO4O3YEJQ
+export NEXMO_BUCKET_SECRET=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
+
+# Nexmo - Dashboard credentials
+export DASHBOARD_USERNAME=daniel.liburd@yld.io
+export DASHBOARD_PASSWORD='$s&6hAkxiD91'
+
+# SLS_DEBUG - Debug logs when running serverless
+export SLS_DEBUG=true
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
