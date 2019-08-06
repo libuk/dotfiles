@@ -14,4 +14,4 @@ install() {
   code --install-extension wix.vscode-import-cost
 }
 
-install()
+install
