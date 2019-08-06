@@ -6,7 +6,8 @@ This is where I keep my dotfiles under version control for easy access.
 
 - Brew
   - Alfred (cask)
-  - VSCode - Add settings.json
+  - VSCode
+    - Add settings.json
   - zsh
   - nvm (node version manager)
   - git
@@ -14,6 +15,9 @@ This is where I keep my dotfiles under version control for easy access.
   - Gitify
   - iTerm2
   - whatsApp
+  - todo-txt
+    - save config file
+    - amend installation command to include config defaults
 - Vs code configuration
   - Extensions
   - Editor config
