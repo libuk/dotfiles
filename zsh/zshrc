@@ -15,6 +15,7 @@ alias agu="sudo apt-get update"
 alias agi="sudo apt-get install"
 alias wk="cd ~/work/"
 alias fl="cd ~/www/feelo"
+alias t="todo.sh"
 
 # Git
 alias ga="git add"
