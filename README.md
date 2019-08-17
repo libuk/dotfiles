@@ -8,9 +8,7 @@ This is where I keep my dotfiles under version control for easy access.
   - Alfred (cask)
   - VSCode
     - Add settings.json
-  - zsh
   - nvm (node version manager)
-  - git
   - Spectacle
   - Gitify
   - iTerm2

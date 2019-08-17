@@ -17,4 +17,5 @@ Plug 'vim-airline/vim-airline-themes'                   " airline themes
 Plug 'easymotion/vim-easymotion'                        " easy motion
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }  " vim prettier
 Plug 'junegunn/fzf'                                     " fzf - fuzzy search
+Plug 'joshdick/onedark.vim'				" onedark theme
 call plug#end()

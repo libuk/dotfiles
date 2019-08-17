@@ -3,10 +3,6 @@ ZSH_THEME="wezm" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
-plugins=(
-  brew
-)
-
 # Misc
 alias lsa="ls -a"
 alias clr="clear"
@@ -35,8 +31,6 @@ alias gstashapp="git stash apply"
 # ngrok
 alias ngrok="~/ngrok"
 
-source $ZSH/oh-my-zsh.sh
-
 PATH=${PATH}:/usr/local/bin
 PATH=${PATH}:/usr/bin
 PATH=${PATH}:/bin
@@ -50,20 +44,11 @@ PATH=$PATH:/usr/local/go/bin
 
 export PATH=${PATH}
 
-export NVM_DIR="$HOME/.nvm"
 export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# Nexmo - AWS IAM credentials
-export NEXMO_BUCKET_KEY=AKIAJK3TCCFLO4O3YEJQ
-export NEXMO_BUCKET_SECRET=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
-
-# Nexmo - Dashboard credentials
-export DASHBOARD_USERNAME=daniel.liburd@yld.io
-export DASHBOARD_PASSWORD='$s&6hAkxiD91'
 
 # SLS_DEBUG - Debug logs when running serverless
 export SLS_DEBUG=true
