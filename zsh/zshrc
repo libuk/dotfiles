@@ -12,6 +12,7 @@ alias agi="sudo apt-get install"
 alias wk="cd ~/work/"
 alias fl="cd ~/www/feelo"
 alias t="todo.sh"
+alias pscripts="cat package.json | jq .scripts"
 
 # Git
 alias ga="git add"
