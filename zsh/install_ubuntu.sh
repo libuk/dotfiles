@@ -8,7 +8,7 @@ install_zsh () {
   sudo apt update;
   sudo apt install zsh;
   sudo apt install powerline fonts-powerline;
-  
+
   # make default shell
   chsh -s /usr/bin/zsh root;
 }
@@ -35,4 +35,3 @@ setup () {
 }
 
 setup
-

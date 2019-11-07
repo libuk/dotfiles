@@ -1,10 +1,15 @@
 export ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
-ZSH_THEME="wezm" # Current theme.
+ZSH_THEME="clean" # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
+source $ZSH/oh-my-zsh.sh
+
+# Zero 1
+alias zid="ssh-add -K ~/.ssh/id_rsa_zero_1"
+
 # Misc
-alias lsa="ls -a"
+alias lsa="ls -al"
 alias clr="clear"
 alias ag="sudo apt-get"
 alias agu="sudo apt-get update"
@@ -12,7 +17,7 @@ alias agi="sudo apt-get install"
 alias wk="cd ~/work/"
 alias fl="cd ~/www/feelo"
 alias t="todo.sh"
-alias pscripts="cat package.json | jq .scripts"
+alias psc="cat package.json | jq .scripts"
 
 # Git
 alias ga="git add"
