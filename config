@@ -1,0 +1,11 @@
+# GitHub
+Host github.com
+	HostName github.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+
+# GitLab
+Host gitlab.com
+	HostName gitlab.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa_zero_1
