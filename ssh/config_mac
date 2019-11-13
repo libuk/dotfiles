@@ -1,0 +1,11 @@
+# GitHub
+Host github.com
+	AddKeysToAgent yes
+	UseKeyChain yes
+	IdentityFile ~/.ssh/id_rsa
+
+# GitLab
+Host gitlab.com
+	AddKeysToAgent yes
+	UseKeyChain yes
+	IdentityFile ~/.ssh/id_rsa_zero_1
