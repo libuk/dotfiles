@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
-ZSH_THEME="clean" # Current theme.
+ZSH_THEME="clean"           # Current theme.
 
 COMPLETION_WAITING_DOTS="true"
 
@@ -7,6 +7,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Zero 1
 alias zid="ssh-add -K ~/.ssh/id_rsa_zero_1"
+alias zdock="docker container start validator_strapi-sql-database"
 
 # Misc
 alias lsa="ls -al"
@@ -36,8 +37,8 @@ alias gstashapp="git stash apply"
 
 # Python
 alias python="python3"
-alias activate="source venv/bin/activate" # alias for activating venv
-export WORKON_HOME=~/Code/python_projects # set path for 'workon' command
+alias activate="source venv/bin/activate"                         # alias for activating venv
+export WORKON_HOME=~/Code/python_projects                         # set path for 'workon' command
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python3 # set default interpreter for venv
 source /Users/danielliburd/Library/Python/3.6/bin/virtualenvwrapper.sh
 
@@ -61,8 +62,8 @@ export PATH=${PATH}
 export HOMEBREW_GITHUB_API_TOKEN=8639e0904e8307bd8a59c1d39840edf063809144
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"                   # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # SLS_DEBUG - Debug logs when running serverless
 export SLS_DEBUG=true
