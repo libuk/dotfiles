@@ -34,6 +34,13 @@ alias gstashls="git stash list"
 alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
 
+# Python
+alias python="python3"
+alias activate="source venv/bin/activate" # alias for activating venv
+export WORKON_HOME=~/Code/python_projects # set path for 'workon' command
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python3 # set default interpreter for venv
+source /Users/danielliburd/Library/Python/3.6/bin/virtualenvwrapper.sh
+
 # ngrok
 alias ngrok="~/ngrok"
 
@@ -46,6 +53,7 @@ PATH=${PATH}:/opt/X11/bin
 PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
 PATH=${PATH}:/.gem/ruby/2.3.0/bin
 PATH=${PATH}:/Users/danielliburd/.gem/ruby/2.3.0/bin
+PATH=${PATH}:/Users/danielliburd/Library/Python/3.6/bin
 PATH=$PATH:/usr/local/go/bin
 
 export PATH=${PATH}
