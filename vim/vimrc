@@ -1,5 +1,3 @@
-" Author: Daniel Liburd
-
 " PLUGINS
 if filereadable(expand("~/.vim/plugins.vim"))
 	source ~/.vim/plugins.vim
@@ -71,3 +69,4 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 
 " EASY-MOTION
 let g:EasyMotion_do_mapping = 1 " Use default mappings
+

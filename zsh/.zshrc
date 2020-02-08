@@ -6,7 +6,7 @@ COMPLETION_WAITING_DOTS="true"
 source $ZSH/oh-my-zsh.sh
 
 # Zero 1
-alias zid="ssh-add -K ~/.ssh/id_rsa_zero_1"
+alias zid="eval "$(ssh-agent -s)" && ssh-add -K ~/.ssh/id_rsa_zero_1"
 alias zdock="docker container start validator_strapi-sql-database"
 
 # Misc
@@ -19,6 +19,11 @@ alias wk="cd ~/work/"
 alias fl="cd ~/www/feelo"
 alias t="todo.sh"
 alias psc="cat package.json | jq .scripts"
+
+CODE="/Users/danielliburd/Code"
+DOTFILES="$CODE/dotfiles"
+DOT_VIM="$CODE/dotfiles/vim"
+DOT_ZSH="$CODE/dotfiles/zsh"
 
 # Git
 alias ga="git add"
@@ -55,7 +60,8 @@ PATH=${PATH}:/Applications/Postgres.app/Contents/Versions/latest/bin
 PATH=${PATH}:/.gem/ruby/2.3.0/bin
 PATH=${PATH}:/Users/danielliburd/.gem/ruby/2.3.0/bin
 PATH=${PATH}:/Users/danielliburd/Library/Python/3.6/bin
-PATH=$PATH:/usr/local/go/bin
+PATH=${PATH}:/usr/local/go/bin
+PATH=${PATH}:/usr/local/mysql/bin
 
 export PATH=${PATH}
 
