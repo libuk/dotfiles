@@ -38,6 +38,13 @@ endif
 " MAPS
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
+" split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+
+" move window
+nmap <Space> <C-w>w
+
 " SYNTASTIC
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
