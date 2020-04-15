@@ -5,6 +5,10 @@ COMPLETION_WAITING_DOTS="true"
 
 source $ZSH/oh-my-zsh.sh
 
+# Ruby
+source /usr/local/share/chruby/chruby.sh
+chruby 2.6.2
+
 # Zero 1
 alias zid="eval "$(ssh-agent -s)" && ssh-add -K ~/.ssh/id_rsa_zero_1"
 alias zdock="docker container start validator_strapi-sql-database"
@@ -39,13 +43,6 @@ alias gstash="git stash"
 alias gstashls="git stash list"
 alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
-
-# Python
-alias python="python3"
-alias activate="source venv/bin/activate"                         # alias for activating venv
-export WORKON_HOME=~/Code/python_projects                         # set path for 'workon' command
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python/bin/python3 # set default interpreter for venv
-source /Users/danielliburd/Library/Python/3.6/bin/virtualenvwrapper.sh
 
 # ngrok
 alias ngrok="~/ngrok"
