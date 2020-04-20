@@ -39,11 +39,15 @@ endif
 nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " split window
-nmap ss :split<Return><C-w>w
-nmap sv :vsplit<Return><C-w>w
+nnoremap ss :split<Return><C-w>w
+nnoremap sv :vsplit<Return><C-w>w
 
 " move window
-nmap <Space> <C-w>w
+nnoremap <Space> <C-w>w
+
+" FZF
+nnoremap <C-p> :FZF<CR>
+set rtp+=/usr/local/opt/fzf
 
 " SYNTASTIC
 set statusline+=%#warningmsg#
@@ -71,8 +75,8 @@ let g:netrw_liststyle = 3 " tree list view - display files inside dir
 let g:netrw_banner = 0    " remove explorer banner
 
 " PRETTIER
-let g:prettier#autoformat = 0 " format on save
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+" let g:prettier#autoformat = 0 " format on save
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 " EASY-MOTION
 let g:EasyMotion_do_mapping = 1 " Use default mappings
