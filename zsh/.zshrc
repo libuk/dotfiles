@@ -31,7 +31,7 @@ DOT_ZSH="$CODE/dotfiles/zsh"
 
 # Git
 alias ga="git add"
-alias gc="git commit -m"
+alias gc="git commit"
 alias gs="git status"
 alias gd="git diff"
 alias gp="git push"
