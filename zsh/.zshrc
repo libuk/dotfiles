@@ -9,10 +9,6 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/chruby/chruby.sh
 chruby 2.6.2
 
-# Zero 1
-alias zid="eval "$(ssh-agent -s)" && ssh-add -K ~/.ssh/id_rsa_zero_1"
-alias zdock="docker container start validator_strapi-sql-database"
-
 # Misc
 alias lsa="ls -al"
 alias clr="clear"
@@ -23,6 +19,9 @@ alias wk="cd ~/work/"
 alias fl="cd ~/www/feelo"
 alias t="todo.sh"
 alias psc="cat package.json | jq .scripts"
+alias be="bundle exec"
+alias bi="bundle install"
+alias fzc="FZF | pbcopy"
 
 CODE="/Users/danielliburd/Code"
 DOTFILES="$CODE/dotfiles"
@@ -43,6 +42,8 @@ alias gstash="git stash"
 alias gstashls="git stash list"
 alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
+alias glg="git log --oneline --graph --decorate"
+alias grim="git rebase -i master"
 
 # ngrok
 alias ngrok="~/ngrok"
