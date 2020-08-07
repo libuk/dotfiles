@@ -22,6 +22,7 @@ alias psc="cat package.json | jq .scripts"
 alias be="bundle exec"
 alias bi="bundle install"
 alias fzc="FZF | pbcopy"
+alias tx="tmux"
 
 CODE="/Users/danielliburd/Code"
 DOTFILES="$CODE/dotfiles"
