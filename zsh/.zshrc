@@ -3,7 +3,13 @@ export ZSH=$HOME/.oh-my-zsh # Path to oh-my-zsh installation.
 ZSH_THEME="clean"           # Current theme.
 COMPLETION_WAITING_DOTS="true"
 
+CODE="/Users/danielliburd/Code"
+DOTFILES="$CODE/dotfiles"
+DOT_VIM="$CODE/dotfiles/vim"
+DOT_ZSH="$CODE/dotfiles/zsh"
+
 source $ZSH/oh-my-zsh.sh
+source $DOT_ZSH/plugins.sh
 
 # Ruby
 source /usr/local/share/chruby/chruby.sh
@@ -17,11 +23,6 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias fzc="FZF | pbcopy"
 alias tx="tmux"
-
-CODE="/Users/danielliburd/Code"
-DOTFILES="$CODE/dotfiles"
-DOT_VIM="$CODE/dotfiles/vim"
-DOT_ZSH="$CODE/dotfiles/zsh"
 
 # Git
 alias ga="git add"
