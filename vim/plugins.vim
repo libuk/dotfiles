@@ -8,6 +8,8 @@ call plug#begin('~/.vim/bundle')
 Plug 'https://github.com/flazz/vim-colorschemes.git'    " colour schemes
 Plug 'pangloss/vim-javascript'                          " javscript syntax highlighting and indentation
 Plug 'https://github.com/mxw/vim-jsx.git'               " jsx syntax highlighting and indentation
+Plug 'leafgarland/typescript-vim'                       " typescript syntax highlighting
+Plug 'peitalin/vim-jsx-typescript'                      " syntax highligting for jsx in typescript
 Plug 'https://github.com/scrooloose/syntastic.git'      " linter
 Plug 'https://github.com/hail2u/vim-css3-syntax.git'    " ccs3 syntax
 Plug 'cakebaker/scss-syntax.vim'                        " scss syntax
