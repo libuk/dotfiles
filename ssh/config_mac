@@ -4,8 +4,8 @@ Host github.com
 	UseKeyChain yes
 	IdentityFile ~/.ssh/id_rsa
 
-# GitLab
-Host gitlab.com
+# Dans Log
+Host danslog.net
 	AddKeysToAgent yes
 	UseKeyChain yes
-	IdentityFile ~/.ssh/id_rsa_zero_1
+	IdentityFile ~/.ssh/nemo
