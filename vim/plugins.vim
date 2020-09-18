@@ -21,4 +21,5 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }  " vim prettier
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }     " fzf - fuzzy search
 Plug 'junegunn/fzf.vim'                                 " fzf.vim - fuzzy search
 Plug 'joshdick/onedark.vim'				                      " onedark theme
+Plug 'mustache/vim-mustache-handlebars'                 " handlebars support
 call plug#end()
