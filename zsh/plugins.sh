@@ -3,11 +3,12 @@
 PLUGINS_DIR="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins"
 
 install_autosuggestions () {
-  if [ ! -d "$PLUGINS_DIR/zsh-autosuggestions" ]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions PLUGINS_DIR/zsh-autosuggestions
+  AUTOSUGGESTIONS_DIR="$PLUGINS_DIR/zsh-autosuggestions"
+
+  if [ ! -d  $AUTOSUGGESTIONS_DIR ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions $AUTOSUGGESTIONS_DIR
     echo 'Autosuggestions installed'
   fi
-
 }
 
 plugins=(
