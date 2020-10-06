@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PLUGINS_DIR="${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins"
+PLUGINS_DIR=~/.oh-my-zsh/custom/plugins
 
 install_autosuggestions () {
   AUTOSUGGESTIONS_DIR="$PLUGINS_DIR/zsh-autosuggestions"
