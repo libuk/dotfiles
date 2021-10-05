@@ -13,7 +13,7 @@ source $DOT_ZSH/plugins.sh
 
 # Ruby
 source /usr/local/share/chruby/chruby.sh
-chruby 2.6.2
+chruby 2.7.4
 
 # Misc
 alias lsa="ls -al"
