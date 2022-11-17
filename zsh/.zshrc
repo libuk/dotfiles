@@ -41,6 +41,7 @@ alias gstashd="git stash drop"
 alias gstashapp="git stash apply"
 alias glg="git log --oneline --graph --decorate"
 alias grim="git rebase -i master"
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
 # directory colors
 d=$HOME/.dircolors
