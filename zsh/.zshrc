@@ -27,6 +27,7 @@ alias tx="tmux"
 # Git
 alias ga="git add"
 alias gc="git commit"
+alias gcf="git commit --fixup"
 alias gs="git status"
 alias gd="git diff"
 alias gp="git push"
