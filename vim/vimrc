@@ -15,7 +15,7 @@ set expandtab                   " tabs are spaces
 set backspace=indent,eol,start  " backspace works as normal
 
 " UI LAYOUT
-set number          " show line numbers
+set relativenumber  " show relative line numbers
 set showcmd         " show command in bottom bar
 set cursorline      " highlight current line
 set laststatus=2    " always display statusline
