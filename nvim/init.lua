@@ -1,2 +1,5 @@
 require('settings')
 require('mappings')
+require('theme.nightfox')
+require('package-manager')
+require('file-explorer')

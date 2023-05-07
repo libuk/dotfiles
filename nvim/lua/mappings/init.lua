@@ -37,3 +37,6 @@ set('n', '<Leader>x', '<C-w>q', opts)
 
 -- reload all buffers
 set('n', '<Leader>r', 'bufdo e!<cr>', opts)
+
+-- toggle file explorer
+set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)

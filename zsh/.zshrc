@@ -15,11 +15,9 @@ source $DOT_ZSH/plugins.sh
 # Misc
 alias lsa="ls -al"
 alias clr="clear"
-alias psc="cat package.json | jq .scripts"
 alias be="bundle exec"
 alias bi="bundle install"
-alias fzc="FZF | pbcopy"
-alias tx="tmux"
+alias nv="nvim"
 
 # Git
 alias ga="git add"
