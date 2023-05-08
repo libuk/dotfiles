@@ -1,3 +1,2 @@
-require('nvim-tree').setup({
-    auto_close = true
-})
+require('telescope').setup()
+require('telescope').load_extension('file_browser')

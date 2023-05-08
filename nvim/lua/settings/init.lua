@@ -11,9 +11,5 @@ set.expandtab = true        -- tabs are spaces
 set.relativenumber = true  -- show relative line numbers
 set.cursorline = true      -- highlight current line
 
--- FILE EXPLORER
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
 -- MISC
 set.mouse=a  -- enable mouse interactions
