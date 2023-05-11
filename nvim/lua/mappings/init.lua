@@ -30,7 +30,7 @@ set('n', '<Leader><Space>', '<C-w>w', opts)
 set('n', '<Leader>h', ':noh<cr>', opts)
 
 -- $ goes to last character of line instead of end of line
-set('n', '<Leader>$', 'g_', opts)
+set('v', '<Leader>$', 'g_', opts)
 
 -- close window
 set('n', '<Leader>x', '<C-w>q', opts)
@@ -40,3 +40,6 @@ set('n', '<Leader>r', 'bufdo e!<cr>', opts)
 
 -- toggle file explorer
 set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)
+
+-- open file browser
+set('n', '<C-p>', ':Telescope find_files hidden=true<cr>', opts)
