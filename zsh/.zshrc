@@ -66,7 +66,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # chruby
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh # load chruby
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh # load autoswitching of ruby version on 'cd'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"                   # This loads nvm
