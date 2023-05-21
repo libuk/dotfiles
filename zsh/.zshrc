@@ -11,32 +11,7 @@ DOT_ZSH="$CODE/dotfiles/zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 source $DOT_ZSH/plugins.sh
-
-# Misc
-alias lsa="ls -al"
-alias clr="clear"
-alias be="bundle exec"
-alias bi="bundle install"
-alias nv="nvim"
-
-# Git
-alias ga="git add"
-alias gc="git commit"
-alias gcf="git commit --fixup"
-alias gs="git status"
-alias gd="git diff"
-alias gp="git push"
-alias gpl="git pull"
-alias gco="git checkout"
-alias gb="git branch"
-alias gbs="git branch -vv"
-alias gstash="git stash"
-alias gstashls="git stash list"
-alias gstashd="git stash drop"
-alias gstashapp="git stash apply"
-alias glg="git log --oneline --graph --decorate"
-alias grim="git rebase -i master"
-alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+source $DOT_ZSH/alias.sh # aliases
 
 # directory colors
 d=$HOME/.dircolors
