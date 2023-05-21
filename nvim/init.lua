@@ -1,5 +1,7 @@
 require('settings')
 require('mappings')
+require('lualine-config')
+require('bufferline-config')
 require('theme.nightfox')
 require('package-manager')
 require('file-explorer')

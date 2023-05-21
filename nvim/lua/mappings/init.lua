@@ -43,3 +43,9 @@ set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)
 
 -- open file browser
 set('n', '<C-p>', ':Telescope find_files hidden=true<cr>', opts)
+
+-- bufferline pick buffer
+set('n', '<Leader>b', ':BufferLinePick<cr>', opts)
+
+-- bufferline close buffer
+set('n', '<Leader>B', ':BufferLinePickClose<cr>', opts)
