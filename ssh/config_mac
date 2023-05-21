@@ -4,8 +4,3 @@ Host github.com
 	UseKeyChain yes
 	IdentityFile ~/.ssh/id_rsa
 
-# Dans Log
-Host danslog.net
-	AddKeysToAgent yes
-	UseKeyChain yes
-	IdentityFile ~/.ssh/nemo
