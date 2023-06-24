@@ -39,8 +39,8 @@ export PATH=${PATH}
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# chruby
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh # load chruby
+# rvm
+source /Users/danielliburd/.rvm/scripts/rvm
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"                   # This loads nvm
