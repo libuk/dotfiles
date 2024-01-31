@@ -33,8 +33,13 @@ PATH=${PATH}:/usr/local/go/bin
 PATH=${PATH}:/usr/local/mysql/bin
 PATH=${PATH}:$HOME/.local/bin
 PATH=${PATH}:$HOME/.composer/vendor/bin
+PATH=${PATH}:/Users/danielliburd/Code/clients/moj/hmpps-approved-premises-tools/bin
 
 export PATH=${PATH}
+
+# export APPROVED_PREMISES_UI_PATH=/Users/danielliburd/Code/clients/moj/hmpps-temporary-accommodation-ui
+export APPROVED_PREMISES_UI_PATH=/Users/danielliburd/Code/clients/moj/hmpps-community-accommodation-tier-2-ui
+export APPROVED_PREMISES_API_PATH=/Users/danielliburd/Code/clients/moj/hmpps-approved-premises-api
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -58,3 +63,4 @@ export SLS_DEBUG=true
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/danielliburd/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
