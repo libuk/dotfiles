@@ -44,6 +44,9 @@ set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)
 -- open file browser
 set('n', '<C-p>', ':Telescope find_files hidden=true<cr>', opts)
 
+-- open live grep search
+set('n', '<C-f>', ':Telescope live_grep<cr>', opts)
+
 -- bufferline pick buffer
 set('n', '<Leader>b', ':BufferLinePick<cr>', opts)
 
