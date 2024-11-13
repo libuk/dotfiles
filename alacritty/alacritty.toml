@@ -1,0 +1,36 @@
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.primary]
+background = "#1d1f21"
+foreground = "#c5c8c6"
+
+[cursor]
+blink_interval = 500
+blink_timeout = 0
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 18.0
+
+[font.offset]
+x = 1
+y = 1
+
+[window]
+dynamic_padding = false
+dynamic_title = true
+opacity = 0.9
+startup_mode = "Windowed"
+title = "Alacritty"
+
+[window.padding]
+x = 10
+y = 5
