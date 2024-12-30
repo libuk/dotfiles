@@ -4,28 +4,28 @@ set -e
 
 OS=$1
 OS_MAC="macos"
-OS_UBUNTU="ubuntu"
+OS_DEBIAN="debian"
 
 show_help() {
 	echo "Usage: $0 [operating-system]"
 	echo
 	echo "Examples:"
-	echo " $0 ${OS_UBUNTU}"
+	echo " $0 ${OS_DEBIAN}"
 	echo " $0 ${OS_MAC}"
 }
 
 # if operating system is not valid, show help
 
-if [ "$OS" != "$OS_MAC" ] && [ "$OS" != "$OS_UBUNTU" ]; then
+if [ "$OS" != "$OS_MAC" ] && [ "$OS" != "$OS_DEBIAN" ]; then
 	show_help
 	exit 1
 fi	
 
-# If os is ubuntu, check for existing installation before attempting install
+# If os is debian, check for existing installation before attempting install
 
-if [ $OS = $OS_UBUNTU ]; then
+if [ $OS = $OS_DEBIAN ]; then
 	if [ -e ~/usr/bin/tmux ]; then
-		echo "Platform: ${OS_UBUNTU}"
+		echo "Platform: ${OS_DEBIAN}"
 
 		echo "Installing tmux"
 
