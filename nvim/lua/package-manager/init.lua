@@ -1,29 +1,31 @@
-return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+-- Load vim-plug
 
-  -- nightfox theme
-  use "EdenEast/nightfox.nvim"
+-- PLUGINS ( using vim-plug )
 
-  -- file explorer
-  use {
-    "nvim-telescope/telescope-file-browser.nvim",
-        requires = {
-            "nvim-telescope/telescope.nvim",
-            "nvim-lua/plenary.nvim"
-        }
-  }
+local vim = vim
+local Plug = vim.fn['plug#']
 
-  -- lualine
-  use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
+vim.call('plug#begin')
 
-  -- bufferline
-  use {
-    'akinsho/bufferline.nvim',
-    tag = "*",
-    requires = 'nvim-tree/nvim-web-devicons'
-  }
-end)
+-- nightfox theme
+Plug("EdenEast/nightfox.nvim")
+
+-- telescope - required by nvim-telescope/telescope-file-browser.nvim
+Plug("nvim-telescope/telescope.nvim")
+
+-- plenary - required by nvim-telescope/telescope-file-browser.nvim
+Plug("nvim-lua/plenary.nvim")
+
+-- file explorer
+Plug("nvim-telescope/telescope-file-browser.nvim")
+
+-- nvim web devicons - required by nvim-lualine/lualine.nvim and akinsho/bufferline.nvim
+Plug("nvim-tree/nvim-web-devicons")
+
+-- lualine
+Plug("nvim-lualine/lualine.nvim")
+
+-- bufferline
+Plug("akinsho/bufferline.nvim", { ["tag"] = "*" })
+
+vim.call('plug#end')
