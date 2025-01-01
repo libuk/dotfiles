@@ -147,3 +147,6 @@ alias glg="git log --oneline --graph --decorate"
 alias grim="git rebase -i master"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
+# Enable incremental history search using the up/down arrow keys
+bind '"\e[A": history-search-backward'  # Up arrow
+bind '"\e[B": history-search-forward'   # Down arrow
