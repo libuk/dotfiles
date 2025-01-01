@@ -61,8 +61,12 @@ show_git_branch() {
    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+show_git_unsaved() {
+  [[ -n $(git status --porcelain 2>/dev/null) ]] && echo "*"
+}
+
 if [ "$color_prompt" = yes ]; then
-  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]$(show_git_branch) \$ '
+  PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\[\033[01;33m\]$(show_git_branch)\[\033[00m\]\[\033[01;31m\]$(show_git_unsaved)\[\033[00m\] \$ '
 else
   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(show_git_branch) \$ '
 fi
