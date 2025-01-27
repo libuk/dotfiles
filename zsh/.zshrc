@@ -37,10 +37,6 @@ PATH=${PATH}:$CODE/hmpps-approved-premises-tools/bin
 
 export PATH=${PATH}
 
-# export APPROVED_PREMISES_UI_PATH=/Users/danielliburd/Code/clients/moj/hmpps-temporary-accommodation-ui
-export APPROVED_PREMISES_UI_PATH=/Users/danielliburd/Code/clients/moj/hmpps-community-accommodation-tier-2-ui
-export APPROVED_PREMISES_API_PATH=/Users/danielliburd/Code/clients/moj/hmpps-approved-premises-api
-
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
