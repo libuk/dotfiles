@@ -33,7 +33,7 @@ PATH=${PATH}:/usr/local/go/bin
 PATH=${PATH}:/usr/local/mysql/bin
 PATH=${PATH}:$HOME/.local/bin
 PATH=${PATH}:$HOME/.composer/vendor/bin
-PATH=${PATH}:/Users/danielliburd/Code/clients/moj/hmpps-approved-premises-tools/bin
+PATH=${PATH}:$CODE/hmpps-approved-premises-tools/bin
 
 export PATH=${PATH}
 
