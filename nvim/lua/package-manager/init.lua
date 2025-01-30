@@ -28,4 +28,7 @@ Plug("nvim-lualine/lualine.nvim")
 -- bufferline
 Plug("akinsho/bufferline.nvim", { ["tag"] = "*" })
 
+-- treesitter
+Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate" })
+
 vim.call('plug#end')
