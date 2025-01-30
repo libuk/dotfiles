@@ -42,7 +42,10 @@ set('n', '<Leader>r', 'bufdo e!<cr>', opts)
 set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)
 
 -- open file browser
-set('n', '<C-p>', ':Telescope find_files hidden=true<cr>', opts)
+set('n', '<Leader>pf', ':Telescope find_files hidden=true<cr>', opts)
+
+-- open git file browser
+set('n', '<C-p>', ':Telescope git_files<cr>', opts)
 
 -- open live grep search
 set('n', '<C-f>', ':Telescope live_grep<cr>', opts)
