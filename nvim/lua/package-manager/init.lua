@@ -31,4 +31,7 @@ Plug("akinsho/bufferline.nvim", { ["tag"] = "*" })
 -- treesitter
 Plug("nvim-treesitter/nvim-treesitter", { ["do"] = ":TSUpdate" })
 
+-- treesitter playground
+Plug("nvim-treesitter/playground")
+
 vim.call('plug#end')
