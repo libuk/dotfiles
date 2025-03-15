@@ -33,6 +33,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- language servers
 require('lspconfig').ts_ls.setup({})
+require('lspconfig').gopls.setup({
+  cmd = { '/home/libuk/go/bin/gopls' }
+})
 -- require('lspconfig').lua_ls.setup({})
 
 local cmp = require('cmp')
