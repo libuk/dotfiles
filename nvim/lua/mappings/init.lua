@@ -38,8 +38,11 @@ set('n', '<Leader>x', '<C-w>q', opts)
 -- reload all buffers
 set('n', '<Leader>r', 'bufdo e!<cr>', opts)
 
--- toggle file explorer
-set('n', '<Leader>e', ':NvimTreeToggle<cr>', opts)
+-- toggle file explorer in current path
+set('n', '<Leader>e', ':Telescope file_browser path=%:p:h select_buffer=true<CR>', opts)
+
+-- toggle file explorer in project path
+set('n', '<Leader>E', ':Telescope file_browser<CR>', opts)
 
 -- open file browser
 set('n', '<Leader>pf', ':Telescope find_files hidden=true<cr>', opts)
