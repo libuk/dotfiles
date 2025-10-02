@@ -58,3 +58,6 @@ set('n', '<Leader>b', ':BufferLinePick<cr>', opts)
 
 -- bufferline close buffer
 set('n', '<Leader>B', ':BufferLinePickClose<cr>', opts)
+
+-- show diagnostics
+set('n', '<Leader>K', ':lua vim.diagnostic.open_float()<cr>', opts)

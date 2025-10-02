@@ -24,7 +24,7 @@ fi
 # If os is debian, check for existing installation before attempting install
 
 if [ $OS = $OS_DEBIAN ]; then
-  if [ -e ~/usr/bin/tmux ]; then
+  if [ ! -e ~/usr/bin/tmux ]; then
     echo "Platform: ${OS_DEBIAN}"
 
     echo "Installing tmux"
@@ -41,7 +41,7 @@ fi
 # If os is macos, check for existing installation before attempting install
 
 if [ $OS = $OS_MAC ]; then
-  if [ -e /opt/homebrew/bin/tmux ]; then
+  if [ ! -e /opt/homebrew/bin/tmux ]; then
     echo "Platform: ${OS_MAC}"
 
     echo "Installing tmux"
