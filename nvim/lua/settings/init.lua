@@ -11,7 +11,7 @@ set.expandtab = true        -- tabs are spaces
 set.number = true          -- show current line number
 set.relativenumber = true  -- show relative line numbers
 set.cursorline = true      -- highlight current line
-set.hlsearch = false       -- do not highlight search terms
+set.hlsearch = true        -- highlight search terms
 set.incsearch = true       -- incrementally highlight search terms
 
 -- MISC

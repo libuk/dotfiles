@@ -61,3 +61,9 @@ set('n', '<Leader>B', ':BufferLinePickClose<cr>', opts)
 
 -- show diagnostics
 set('n', '<Leader>K', ':lua vim.diagnostic.open_float()<cr>', opts)
+
+-- copy to clipboard
+set('v', '<Leader>y', '"+y', opts)
+
+-- fuzzy find current buffer
+set('n', '<leader>/', ':Telescope current_buffer_fuzzy_find<cr>', opts)
